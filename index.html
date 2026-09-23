@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Living Algorithm — a scroll-driven generative shoe concept where motion grows the product in real time."
+    />
+    <title>Living Algorithm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Spline+Sans+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-mark">L</div>
+        <span>Living Algorithm</span>
+      </div>
+      <nav class="nav">
+        <a href="#story">Concept</a>
+        <a href="#process">Process</a>
+        <a href="#system">System</a>
+        <a href="#launch">Launch</a>
+      </nav>
+      <button class="nav-cta">Explore</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Biomechanical design system</p>
+          <h1>
+            The shoe is not shown.<br />
+            It is grown.<br />
+            <span>by motion.</span>
+          </h1>
+          <p class="lede">
+            A living material language where scroll energy, force, and rhythm shape a
+            performance silhouette in real time.
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="#story">Enter the system</a>
+            <a class="secondary" href="#process">View the approach</a>
+          </div>
+          <div class="metric-row">
+            <div>
+              <strong>60fps</strong>
+              <span>GPU motion</span>
+            </div>
+            <div>
+              <strong>80k</strong>
+              <span>active particles</span>
+            </div>
+            <div>
+              <strong>3 phases</strong>
+              <span>of growth</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="canvas-shell">
+            <canvas id="generative-canvas" aria-label="Generative shoe visual"></canvas>
+            <div class="canvas-label">
+              <span>Scroll energy</span>
+              <strong id="energy-readout">0.00</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="story" id="story">
+        <div class="section-intro">
+          <p class="eyebrow">Why it matters</p>
+          <h2>Interaction becomes co-creation.</h2>
+        </div>
+
+        <div class="story-grid">
+          <article class="story-card is-primary">
+            <span class="card-index">01</span>
+            <h3>Energy first</h3>
+            <p>
+              Scroll velocity and pause intervals become the input force behind the
+              material lattice. The shoe does not simply reveal itself — it responds.
+            </p>
+          </article>
+
+          <article class="story-card">
+            <span class="card-index">02</span>
+            <h3>Material memory</h3>
+            <p>
+              Dense foam, porous structure, and elastic rebound emerge as a result of the
+              user’s own motion rhythm and hesitation.
+            </p>
+          </article>
+
+          <article class="story-card">
+            <span class="card-index">03</span>
+            <h3>Sensory system</h3>
+            <p>
+              Visual bonds, audio resonance, and motion feedback are tied to the same
+              underlying simulation so the story feels unified.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="process" id="process">
+        <div class="section-intro narrow">
+          <p class="eyebrow">System logic</p>
+          <h2>From raw motion to biomechanical form.</h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-stage">
+            <span>Seed</span>
+            <h3>Germination</h3>
+            <p>Particles begin as a fragile molecular cluster, building tension before structure appears.</p>
+          </div>
+          <div class="process-stage">
+            <span>Polymerize</span>
+            <h3>Growth</h3>
+            <p>Bonding intensifies as momentum rises, creating denser foam and directional stiffness.</p>
+          </div>
+          <div class="process-stage">
+            <span>Return</span>
+            <h3>Optimization</h3>
+            <p>Elasticity and rebound phase in at the end, simulating the athlete’s final energy release.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="system" id="system">
+        <div class="system-copy">
+          <p class="eyebrow">Technology stack</p>
+          <h2>Render the impossible with an elegant fallback.</h2>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-item">
+            <span>Core</span>
+            <strong>WebGPU compute</strong>
+            <p>Particle fields and strand dynamics computed on GPU for real-time physical complexity.</p>
+          </div>
+          <div class="tech-item">
+            <span>Motion</span>
+            <strong>Scroll-driven Verlet</strong>
+            <p>Delta input turns into force, damping, and material relaxation rather than static keyframes.</p>
+          </div>
+          <div class="tech-item">
+            <span>Fallback</span>
+            <strong>Canvas + FX</strong>
+            <p>When GPU access is unavailable, the same narrative survives through fluid ink-like motion.</p>
+          </div>
+          <div class="tech-item">
+            <span>Audio</span>
+            <strong>Emergent synthesis</strong>
+            <p>Bond events create tonal texture so motion, sound, and visuals remain inseparable.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="launch" id="launch">
+        <div class="launch-panel">
+          <p class="eyebrow">Launch concept</p>
+          <h2>Designed for brands that want the product to feel alive.</h2>
+          <a href="#top" class="primary">Start the journey</a>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
