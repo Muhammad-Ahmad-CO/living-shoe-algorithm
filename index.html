@@ -1,68 +1,145 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#05070b" />
-  <meta name="description" content="A living footwear system shaped by human motion." />
-  <title>FORM / 01 — Living Algorithm</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css" />
-</head>
-<body>
-  <div class="grain"></div>
-  <div class="cursor-dot"></div>
-  <header class="header">
-    <a class="logo" href="#top" aria-label="Form home"><span>F</span><b>FORM / 01</b></a>
-    <div class="header-right">
-      <button class="sound" id="sound-toggle" type="button" aria-pressed="false"><i></i> sound off</button>
-      <span class="header-index">01 — 03</span>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05080d" />
+    <meta
+      name="description"
+      content="FORM / 01—Living Algorithm. A motion responsive footwear concept where rhythm shapes the material."
+    />
+    <title>FORM / 01 — Living Algorithm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
+    <div class="cursor"></div>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="kicker"><span></span> A responsive object for human motion</p>
-        <h1>Made<br /><em>alive.</em></h1>
-        <p class="intro">A shoe that does not wait to be worn. It listens, adapts, and takes shape in the space between intention and movement.</p>
-        <a class="scroll-cue" href="#origin"><span>Scroll to form</span><b>↓</b></a>
-      </div>
-      <div class="stage-wrap">
-        <div class="stage-meta top"><span>Material study</span><span id="phase-name">SEED / 01</span></div>
-        <canvas id="stage" aria-label="An animated generative shoe material study"></canvas>
-        <div class="stage-meta bottom"><span>scroll energy <strong id="energy">00.00</strong></span><span>FORM / 01</span></div>
-        <div class="stage-ring"></div>
-      </div>
-    </section>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="FORM / 01 home">
+        <span class="brand-mark">F</span>
+        <span>FORM / 01</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#origin">Origin</a>
+        <a href="#system">System</a>
+        <a href="#specs">Specs</a>
+      </nav>
+      <button class="cta" type="button">Launch</button>
+    </header>
 
-    <section class="manifesto" id="origin">
-      <div class="section-number">01 / origin</div>
-      <div class="manifesto-copy"><p class="kicker">Not a product page</p><h2>What if performance<br />could <em>remember</em> you?</h2><p>FORM / 01 is an experiment in responsive footwear. Every scroll is a footfall. Every pause is a breath. Your rhythm becomes the material.</p></div>
-    </section>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Responsive object / motion study</p>
+          <h1>
+            MADE<br />
+            <span>ALIVE.</span>
+          </h1>
+          <p class="lead">
+            A footwear experiment where cadence, pause, and force inform the material itself.
+            The shoe does not wait to be worn. It evolves under the pressure of human movement.
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="#origin">Enter the system</a>
+            <a class="secondary" href="#system">View process</a>
+          </div>
+        </div>
 
-    <section class="chapters" id="chapters">
-      <div class="section-number">02 / the system</div>
-      <div class="chapter-list">
-        <article class="chapter active"><span>01</span><div><h3>Germination</h3><p>A single point of potential. Nothing fixed, everything possible.</p></div><b>↗</b></article>
-        <article class="chapter"><span>02</span><div><h3>Polymerization</h3><p>Force finds direction. Strands connect, tension becomes structure.</p></div><b>↗</b></article>
-        <article class="chapter"><span>03</span><div><h3>Energy return</h3><p>The form holds your momentum, then gives it back with interest.</p></div><b>↗</b></article>
-      </div>
-    </section>
+        <div class="visual-panel">
+          <div class="hud top-left">
+            <span>Material study</span>
+            <strong id="phase-label">SEED / 01</strong>
+          </div>
+          <canvas id="motion-canvas" aria-label="Generative responsive algorithmic shoe visual"></canvas>
+          <div class="hud bottom-right">
+            <span>Energy</span>
+            <strong id="energy-value">0.00</strong>
+          </div>
+        </div>
+      </section>
 
-    <section class="statement">
-      <div class="statement-line"></div><p>Designed in response to you.<br /><em>Never the same twice.</em></p><span>FORM / 01</span>
-    </section>
+      <section class="origin" id="origin">
+        <div class="section-meta">01 / origin</div>
+        <div class="origin-grid">
+          <p class="eyebrow">Not a product page</p>
+          <h2>
+            What if performance<br />
+            could <em>remember</em> you?
+          </h2>
+          <p class="origin-copy">
+            FORM / 01 turns every gesture into a material decision. A scroll becomes momentum,
+            a pause becomes structure, and movement becomes the architecture of the form.
+          </p>
+        </div>
+      </section>
 
-    <section class="specs" id="specs">
-      <div class="section-number">03 / instrument panel</div>
-      <div class="spec-grid"><div><small>Material density</small><strong>84<span>%</span></strong></div><div><small>Energy return</small><strong>91<span>%</span></strong></div><div><small>Response time</small><strong>18<span>ms</span></strong></div><div><small>Particle field</small><strong>80<span>k</span></strong></div></div>
-    </section>
+      <section class="system" id="system">
+        <div class="section-meta">02 / system</div>
+        <div class="system-grid">
+          <article class="card active">
+            <span class="card-number">01</span>
+            <h3>Germination</h3>
+            <p>Potential forms emerge as a single point of force, gathering rather than deciding.</p>
+          </article>
+          <article class="card">
+            <span class="card-number">02</span>
+            <h3>Polymerization</h3>
+            <p>Pressure converts to a lattice, creating density, tension, and movement direction.</p>
+          </article>
+          <article class="card">
+            <span class="card-number">03</span>
+            <h3>Energy return</h3>
+            <p>The structure stores rhythm and releases it with intent, like a body finding stride.</p>
+          </article>
+        </div>
+      </section>
 
-    <section class="final" id="final"><p class="kicker">The first responsive silhouette</p><h2>Move<br /><em>forward.</em></h2><a href="#top" class="round-arrow">↗</a><footer><span>FORM / 01 — LIVING ALGORITHM</span><span>© 2026 / A STUDY IN MOTION</span></footer></section>
-  </main>
-  <script src="./main.js"></script>
-</body>
+      <section class="statement">
+        <div class="statement-bar"></div>
+        <p>
+          Designed in response to you.<br />
+          <em>Never the same twice.</em>
+        </p>
+      </section>
+
+      <section class="specs" id="specs">
+        <div class="section-meta">03 / instrument panel</div>
+        <div class="spec-grid">
+          <div class="spec-item">
+            <small>Material density</small>
+            <strong>84<span>%</span></strong>
+          </div>
+          <div class="spec-item">
+            <small>Energy return</small>
+            <strong>91<span>%</span></strong>
+          </div>
+          <div class="spec-item">
+            <small>Response time</small>
+            <strong>18<span>ms</span></strong>
+          </div>
+          <div class="spec-item">
+            <small>Particle field</small>
+            <strong>80<span>k</span></strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="final">
+        <p class="eyebrow">The first responsive silhouette</p>
+        <h2>Move<br /><span>forward.</span></h2>
+        <a href="#top" class="arrow">↗</a>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
 </html>
